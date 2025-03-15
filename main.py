@@ -19,13 +19,13 @@ st.set_page_config(page_title="AI Placement Trainer", page_icon="🎓", layout="
 # Initialize Supabase client
 
 # API Keys and Configuration
-EMBED_API_KEY = "HjheJudiISavtMpy65Yh6m0WTA7bjmVs"
-GROQ_API_KEY = "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"
-TAVILY_API_KEY = "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"
-QDRANT_URL = "https://c85c2f9d-8b25-4ce7-9df0-ba9d4cf9f012.europe-west3-0.gcp.cloud.qdrant.io:6333"
-QDRANT_API_KEY = "yDiGYK-wHzb3rpdSlaZuDV0KOK5EYa8rHQdo7KwcvIAKPS3qVzFl_A"
-SUPABASE_URL = "https://ozajbkuiigfvrhcyekbw.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im96YWpia3VpaWdmdnJoY3lla2J3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM3NDQ1ODksImV4cCI6MjA0OTMyMDU4OX0.-btwngaqqQO7wPA_8FAIVeDDcK1pplaIR5DBBlTG1oI"
+EMBED_API_KEY = "Add your API Key here"
+GROQ_API_KEY = "Add your API Key here"
+TAVILY_API_KEY = "Add your API Key here"
+QDRANT_URL = "Add your API Key here"
+QDRANT_API_KEY = "Add your API Key here"
+SUPABASE_URL = "Add your URL here"
+SUPABASE_KEY = "Add your API Key here"
 
 # Initialize Qdrant client
 qdrant_client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
@@ -33,7 +33,7 @@ supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # Add Hugging Face configuration
 model_id = "intfloat/e5-large-v2"
-hf_token = "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"
+hf_token = "Add your key here"
 api_url = f"https://api-inference.huggingface.co/pipeline/feature-extraction/{model_id}"
 headers = {"Authorization": f"Bearer {hf_token}"}
 
