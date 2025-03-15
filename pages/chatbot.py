@@ -22,8 +22,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Supabase Configuration
-SUPABASE_URL = "https://ozajbkuiigfvrhcyekbw.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im96YWpia3VpaWdmdnJoY3lla2J3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM3NDQ1ODksImV4cCI6MjA0OTMyMDU4OX0.-btwngaqqQO7wPA_8FAIVeDDcK1pplaIR5DBBlTG1oI"
+SUPABASE_URL = "ADD YOUR URL"
+SUPABASE_KEY = "ADD YOUR API KEY"
 
 # Initialize Supabase client
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
@@ -63,7 +63,7 @@ rag_system = RAGSystem()
 
 def initialize_groq_client():
     try:
-        client = Groq(api_key="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")
+        client = Groq(api_key="ADD YOUR API KEY")
         return client
     except Exception as e:
         st.error(f"Error initializing Groq client: {e}")
