@@ -1,0 +1,6 @@
+streamlit
+llama-index
+tavily
+qdrant-client
+supabase
+requests
